@@ -5,7 +5,7 @@ versions (based on supplied pixel size).
 
 ### Example definition of "picture" class and "scalable picture"
 ```
-import scalable_image
+from scalable_image import Picture, ScaledPicture
 
 ...
 
