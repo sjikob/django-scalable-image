@@ -10,6 +10,7 @@ from scalable_image import Picture, ScaledPicture
 ...
 
 class ScaledProductPhoto(ScaledPicture):
+	# Required
 	parent = models.ForeignKey('ProductPhoto')
 
 class ProductPhoto(Picture):
@@ -36,7 +37,7 @@ The image file can be accessed via `ProductPhoto.file` or
 
 As well as `get_scaled_picture` there are several method for pre-defined image
 sizes, listed in the example below, or you can create your own methods for your
-standardised image sizes on the `ProductPhoto` sub-class.
+standardised image sizes on your sub-class (`ProductPhoto` above).
 
 ### Example use in template player
 ```
