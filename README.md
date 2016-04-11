@@ -26,18 +26,19 @@ class ProductPhoto(Picture):
 
 ```
 
-Calls to `ProductPhoto.get_scaled_picture(pixels)` will return a
+Calls to `product_photo_instance.get_scaled_picture(pixels)` will return a
 `ScaledProductPhoto` instance of the specified size (keeping aspect). If the
 specified size of picture has never been requested then the original image will
 be scaled, saved to the django storage and then returned. If previously
-requested then the image is returned directly from storage.
+requested, the image is returned directly from storage.
 
-The image file can be accessed via `ProductPhoto.file` or
+The image file can be accessed via instance methods on `ProductPhoto.file` or
 `ScaledProductPhoto.file`.
 
 As well as `get_scaled_picture` there are several method for pre-defined image
-sizes, listed in the example below, or you can create your own methods for your
-standardised image sizes on your sub-class (`ProductPhoto` above).
+sizes, listed in the example below, for ease of use in the template player.
+Additionally, you can of course add your own sub-class methods for for any
+specific image sizes commonly used in a project.
 
 ### Example use in template player
 ```
