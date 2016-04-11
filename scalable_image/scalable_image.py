@@ -109,7 +109,7 @@ class ScalableImage(object):
 
 			if scaled_picture.file.url == None:
 				logging.info(
-					"Parent picture has nop URL, possibly it doesn't exist"
+					"Parent picture has no URL, possibly it doesn't exist"
 				)
 				scaled_picture.delete()
 				raise ObjectDoesNotExist()
