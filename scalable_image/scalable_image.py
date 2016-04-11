@@ -41,7 +41,7 @@ class ScalableImage(object):
 	def get_image_ratio(self, size):
 		"""
 		When supplied with an image "size" (in pixels), returns a tuple of
-		x /	y dimensions that will scale the image to fit in a box of <size> ×
+		x / y dimensions that will scale the image to fit in a box of <size> ×
 		<size> pixels while keeping the aspect ratio of the original image.
 		"""
 	
